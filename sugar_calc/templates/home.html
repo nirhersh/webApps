@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>מחשבון סוכר</title>
+    <link href="../static/css/main1.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>מחשבון הסוכר</h1>
+    <h3>!ברוך הבא למחשבון הסוכר! בחר מהמוצרים ותראה כמה סוכר אתה אוכל בארוחה אחת</h3>
+    <div class="food">
+        <form>
+            <div class="pastry">
+                <h2>מאפים</h2>
+                <label for="a1"> לחם אחיד (3 פרוסות)
+                <input type="checkbox" name="sugar" id="a1" onclick="sumFunction()" value="0.5">
+                </label><br>
+                <label for="a2">פיתה
+                <input type="checkbox" name="sugar" id="a2" onclick="sumFunction()" value="1">
+                </label><br>
+                <label for="a3">לחמניה מתוקה
+                <input type="checkbox" name="sugar" id="a3" onclick="sumFunction()" value="2.5">
+                </label><br>
+                <label for="a4">חלה מתוקה
+                <input type="checkbox" name="sugar" id="a4" onclick="sumFunction()" value="2.5">
+                </label><br>
+            </div>
+            <div class="milk">
+                <h2>מוצרי חלב</h2>
+                <label for="b1">מעדן חלב (125 גרם)
+                <input type="checkbox" name="sugar" id="b1" onclick="sumFunction()" value="5">
+                </label><br>
+                <label for="b2">יוגורט במתיקות מעודנת
+                <input type="checkbox" name="sugar" id="b2" onclick="sumFunction()" value="2">
+                </label><br>
+                <label for="b3">מעדן עם קצפת
+                <input type="checkbox" name="sugar" id="b3" onclick="sumFunction()" value="8">
+                </label><br>
+            </div>
+            <div class="drinks">
+                <h2>שתייה מתוקה</h2>
+                <label for="c1">פחית משקה מוגז
+                <input type="checkbox" name="sugar" id="c1" onclick="sumFunction()" value="8">
+                </label><br>
+                <label for="c2">בקבוק משקה (500 מ"ל)
+                <input type="checkbox" name="sugar" id="c2" onclick="sumFunction()" value="12.5">
+                </label><br>
+                <label for="c3">פחית מיץ
+                <input type="checkbox" name="sugar" id="c3" onclick="sumFunction()" value="8">
+                </label><br>
+                <label for="c4">בקבוק מיץ (500 מ"ל)
+                <input type="checkbox" name="sugar" id="c4" onclick="sumFunction()" value="12.5">
+                </label><br>
+                <label for="c1">כוס מים בטעמים
+                <input type="checkbox" name="sugar" id="c5" onclick="sumFunction()" value="2">
+                </label><br>
+                <label for="c6">כוס חלב וניל
+                <input type="checkbox" name="sugar" id="c6" onclick="sumFunction()" value="4">
+                </label><br>
+                <label for="c1">שקית שוקו
+                <input type="checkbox" name="sugar" id="c7" onclick="sumFunction()" value="0.75">
+                </label><br>
+            </div>
+            <div class="sauce">
+                <h2>רטבים וממרחים</h2>
+                <label for="d1">כף דבש
+                <input type="checkbox" name="sugar" id="d1" onclick="sumFunction()" value="2">
+                </label><br>
+                <label for="d2">קטשופ
+                <input type="checkbox" name="sugar" id="d2" onclick="sumFunction()" value="0.5">
+                </label><br>
+                <label for="d2">נוטלה
+                <input type="checkbox" name="sugar" id="d3" onclick="sumFunction()" value="1.5">
+                </label><br>
+                <label for="d1">ממרח שוקולד
+                <input type="checkbox" name="sugar" id="d4" onclick="sumFunction()" value="2">
+                </label><br>
+                <label for="d5">ממרח בוטנים
+                <input type="checkbox" name="sugar" id="d5" onclick="sumFunction()" value="2">
+                </label><br>
+                <label for="d6">רוטב צ'ילי
+                <input type="checkbox" name="sugar" id="d6" onclick="sumFunction()" value="11">
+                </label><br>
+            </div>
+            <div class="snack1">
+                <h2>חטיפים (100 גרם)</h2>
+                <label for="e1">ביסלי
+                <input type="checkbox" name="sugar" id="e1" onclick="sumFunction()" value="0.5">
+                </label><br>
+                <label for="e2">שוקולד חלב
+                <input type="checkbox" name="sugar" id="e2" onclick="sumFunction()" value="14.5">
+                </label><br>
+                <label for="e3">חטיף שוקולד
+                <input type="checkbox" name="sugar" id="e3" onclick="sumFunction()" value="14.5">
+                </label><br>
+                <label for="e4">כדור גלידה
+                <input type="checkbox" name="sugar" id="e4" onclick="sumFunction()" value="6">
+                </label><br>
+                <label for="e5">דוריטוס
+                <input type="checkbox" name="sugar" id="e5" onclick="sumFunction()" value="0.75">
+                </label><br>
+                <label for="e6">פרוסת עוגה
+                <input type="checkbox" name="sugar" id="e6" onclick="sumFunction()" value="7">
+                </label><br>
+                <label for="e7">שקית פופקורן
+                <input type="checkbox" name="sugar" id="e7" onclick="sumFunction()" value="0.25">
+                </label><br>
+                <label for="f1">קורנפלקס עם סוכר/דבש
+                <input type="checkbox" name="sugar" id="f1" onclick="sumFunction()" value="6">
+                </label><br>
+                <label for="f2">דגני בוקר עם מילוי
+                <input type="checkbox" name="sugar" id="f2" onclick="sumFunction()" value="10">
+                </label><br>
+                <label for="f3">חטיף אנרגיה
+                <input type="checkbox" name="sugar" id="f3" onclick="sumFunction()" value="8">
+                </label><br>
+                <label for="f4">עוגיה
+                <input type="checkbox" name="sugar" id="f4" onclick="sumFunction()" value="10">
+                </label><br>
+                <label for="f5">סוכריות
+                <input type="checkbox" name="sugar" id="f5" onclick="sumFunction()" value="17.5">
+                </label><br>
+            </div>
+            <script>
+            function sumFunction() {
+                var x = document.querySelectorAll("input");
+                var sum = 0.0;
+                var i;
+                for (i = 0; i < x.length; ++i) {
+                    if (x[i].checked) {
+                        sum = sum + parseFloat(x[i].value);
+                    }
+                }
+                document.getElementById("totalAmount").innerHTML =sum + " : " + "כפיות סוכר";
+            }
+            </script>
+        </form>
+        <p id="totalAmount">0</p>
+    </div>
+</div>
+</body>
+</html>
