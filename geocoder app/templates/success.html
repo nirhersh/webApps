@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geocoder App</title>
+    <link href="../static/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Super Geocoder</h1>
+    <h3>Please enter your csv file. Make sure that the addresses are under a column named address or Address</h3>
+    <div class="message">
+        {{text | safe}}
+    </div>
+    <form action="{{url_for('uploaded')}}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Submit</button>
+    </form>
+    <div class="data">
+            <div class="download">
+                <a href="{{url_for('download')}}" target="_blank"> <button class="btn">Download</button></a>
+            </div>
+        <h4>Your Data</h4>
+        <table>
+            {{ data.to_html(classes="table table-striped") | safe}}
+        </table>
+    </div>
+</div>
+</body>
+</html>
